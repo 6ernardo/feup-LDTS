@@ -1,6 +1,5 @@
 package com.l14gr05.proj;
 
-import com.l14gr05.proj.gui.GUI;
 import com.l14gr05.proj.gui.LanternaGUI;
 import com.l14gr05.proj.model.menu.MainMenu;
 import com.l14gr05.proj.states.MainMenuState;
@@ -11,7 +10,7 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 
 public class Main {
-    private GUI gui;
+    private LanternaGUI gui;
     private State state;
 
     public Main() throws IOException, URISyntaxException, FontFormatException {

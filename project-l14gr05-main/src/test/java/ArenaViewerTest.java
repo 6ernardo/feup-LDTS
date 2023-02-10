@@ -1,5 +1,3 @@
-package com.l14gr05.proj.viewer;
-
 import com.l14gr05.proj.gui.GUI;
 import com.l14gr05.proj.model.game.Position;
 import com.l14gr05.proj.model.game.arena.Arena;

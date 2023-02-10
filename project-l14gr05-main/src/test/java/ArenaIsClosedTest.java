@@ -1,5 +1,3 @@
-package com.l14gr05.proj.controller;
-
 import com.l14gr05.proj.controller.game.PuffleController;
 import com.l14gr05.proj.gui.GUI;
 import com.l14gr05.proj.model.game.arena.Arena;

@@ -1,5 +1,3 @@
-package com.l14gr05.proj.controller;
-
 import com.l14gr05.proj.controller.game.PuffleController;
 import com.l14gr05.proj.model.game.Position;
 import com.l14gr05.proj.model.game.arena.Arena;
@@ -29,27 +27,27 @@ public class PuffleControllerTest {
     }
 
     @Test
-    void movePuffleRightEmpty() {
+    void moveHeroRightEmpty() {
         controller.movePuffleRight();
         assertEquals(new Position(6, 5), puffle.getPosition());
     }
 
     @Test
-    void movePuffleRightNotEmpty() {
+    void moveHeroRightNotEmpty() {
         arena.setWalls(Arrays.asList(new Wall(6, 5)));
         controller.movePuffleRight();
         assertEquals(new Position(5, 5), puffle.getPosition());
     }
 
     @Test
-    void movePuffleLeftEmpty() {
+    void moveHeroLeftEmpty() {
         controller.movePuffleLeft();
         assertEquals(new Position(4, 5), puffle.getPosition());
 
     }
 
     @Test
-    void movePuffleLeftNotEmpty() {
+    void moveHeroLeftNotEmpty() {
         arena.setWalls(Arrays.asList(new Wall(4,5 )));
         controller.movePuffleLeft();
         assertEquals(new Position(5, 5), puffle.getPosition());
@@ -77,8 +75,8 @@ public class PuffleControllerTest {
 
     @Test
     void moveHeroDownNotEmpty(){
-        arena.setWalls(Arrays.asList(new Wall(6,5 )));
+        arena.setWalls(Arrays.asList(new Wall(5,6 )));
         controller.movePuffleDown();
-        assertEquals(new Position(5, 6), puffle.getPosition());
+        assertEquals(new Position(5, 5), puffle.getPosition());
     }
 }

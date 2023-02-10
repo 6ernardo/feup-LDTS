@@ -1,5 +1,3 @@
-package com.l14gr05.proj.model;
-
 import com.l14gr05.proj.model.game.Position;
 import net.jqwik.api.ForAll;
 import net.jqwik.api.Property;
